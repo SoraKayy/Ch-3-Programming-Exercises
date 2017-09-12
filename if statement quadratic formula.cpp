@@ -27,7 +27,7 @@ int main()
 	double ans = (-b + sqrt(pow(b, 2) - (4 * a * c))) / 2;
 	double ans2 = (-b - sqrt(pow(b, 2) - (4 * a * c))) / 2;
 
-	if (ans && ans2 < 0)
+	if (ans || ans2 < 0)
 		cout << "Error, there are no solutions \n";
 	else
 		cout << "There is a solution: " << ans << " and " << ans2 << "\n";
